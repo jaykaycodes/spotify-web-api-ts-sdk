@@ -3,7 +3,7 @@ var __importDefault = (this && this.__importDefault) || function (mod) {
     return (mod && mod.__esModule) ? mod : { "default": mod };
 };
 Object.defineProperty(exports, "__esModule", { value: true });
-exports.emptyAccessToken = exports.Scopes = exports.DefaultResponseDeserializer = exports.DefaultResponseValidator = exports.DocumentLocationRedirectionStrategy = exports.NoOpErrorHandler = exports.ConsoleLoggingErrorHandler = exports.GenericCache = exports.LocalStorageCachingStrategy = exports.InMemoryCachingStrategy = exports.ProvidedAccessTokenStrategy = exports.ClientCredentialsStrategy = exports.AuthorizationCodeWithPKCEStrategy = exports.SpotifyApi = void 0;
+exports.AccessTokenHelpers = exports.emptyAccessToken = exports.Scopes = exports.DefaultResponseDeserializer = exports.DefaultResponseValidator = exports.DocumentLocationRedirectionStrategy = exports.NoOpErrorHandler = exports.ConsoleLoggingErrorHandler = exports.GenericCache = exports.LocalStorageCachingStrategy = exports.InMemoryCachingStrategy = exports.ProvidedAccessTokenStrategy = exports.ClientCredentialsStrategy = exports.AuthorizationCodeWithPKCEStrategy = exports.SpotifyApi = void 0;
 const SpotifyApi_js_1 = require("./SpotifyApi.js");
 Object.defineProperty(exports, "SpotifyApi", { enumerable: true, get: function () { return SpotifyApi_js_1.SpotifyApi; } });
 const AuthorizationCodeWithPKCEStrategy_js_1 = __importDefault(require("./auth/AuthorizationCodeWithPKCEStrategy.js"));
@@ -32,4 +32,6 @@ const Scopes_js_1 = require("./Scopes.js");
 Object.defineProperty(exports, "Scopes", { enumerable: true, get: function () { return Scopes_js_1.Scopes; } });
 const IAuthStrategy_js_1 = require("./auth/IAuthStrategy.js");
 Object.defineProperty(exports, "emptyAccessToken", { enumerable: true, get: function () { return IAuthStrategy_js_1.emptyAccessToken; } });
+const AccessTokenHelpers_js_1 = __importDefault(require("./auth/AccessTokenHelpers.js"));
+exports.AccessTokenHelpers = AccessTokenHelpers_js_1.default;
 //# sourceMappingURL=index.js.map
